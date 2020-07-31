@@ -1,0 +1,16 @@
+bot.token: 1113235082:AAG2973CZQBVHbEgqO4Up7vJBOPCkaOyGjE
+bot.username: resliv_tourist_bot
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:cityBot;DB_CLOSE_ON_EXIT=FALSE
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:liquibase-change-log.xml
+    contexts: default
+  h2:
+    console:
+      enabled: true
